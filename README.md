@@ -1,6 +1,19 @@
-# semana-omnistack-10.0
+# DevRadar - semana-omnistack-10.0
 
 Repositório para desenvolviemento na Semana Omnistack 10.0
+
+
+# Run project 
+
+In this project, you can run
+
+### `yarn dev`
+
+in ./backend
+
+### `yarn start` 
+
+in ./web
 
 
 # Run in Insomnia
