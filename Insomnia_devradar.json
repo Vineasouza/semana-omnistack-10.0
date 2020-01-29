@@ -1,0 +1,150 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-01-29T15:15:57.089Z",
+    "__export_source": "insomnia.desktop.app:v7.0.6",
+    "resources": [{
+        "_id": "req_e88773b818594259bdeac48bd6ba76fe",
+        "authentication": {},
+        "body": {},
+        "created": 1579068753498,
+        "description": "",
+        "headers": [],
+        "isPrivate": false,
+        "metaSortKey": -1579152291323,
+        "method": "GET",
+        "modified": 1580310774466,
+        "name": "Listar Devs",
+        "parameters": [],
+        "parentId": "fld_a703cc7969ff48fb82b97a197b38f28c",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ url  }}/devs",
+        "_type": "request"
+    }, {
+        "_id": "fld_a703cc7969ff48fb82b97a197b38f28c",
+        "created": 1579152363270,
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1579152363270,
+        "modified": 1579152363270,
+        "name": "DevRadar",
+        "parentId": "wrk_1335f050470942af81953968c46b4f3c",
+        "_type": "request_group"
+    }, {
+        "_id": "wrk_1335f050470942af81953968c46b4f3c",
+        "created": 1569000077979,
+        "description": "",
+        "modified": 1569000077979,
+        "name": "Insomnia",
+        "parentId": null,
+        "_type": "workspace"
+    }, {
+        "_id": "req_e56b2817d9724598b119718c8018c290",
+        "authentication": {},
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"github_username\": \"vineasouza\",\n\t\"techs\": \"ReactJS, React Native, Node.js\",\n\t\"latitude\": -23.2360211,\n\t\"longitude\": -45.8754574\n}"
+        },
+        "created": 1579060621615,
+        "description": "",
+        "headers": [{
+            "id": "pair_939226e517ca43ccaf5f7e7c47085634",
+            "name": "Content-Type",
+            "value": "application/json"
+        }],
+        "isPrivate": false,
+        "metaSortKey": -1579152291273,
+        "method": "POST",
+        "modified": 1580310769709,
+        "name": "Cadastrar Dev",
+        "parameters": [],
+        "parentId": "fld_a703cc7969ff48fb82b97a197b38f28c",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ url  }}/devs",
+        "_type": "request"
+    }, {
+        "_id": "req_b0253e9df7a34388a551bab2ffa8eda5",
+        "authentication": {},
+        "body": {},
+        "created": 1579069126752,
+        "description": "",
+        "headers": [],
+        "isPrivate": false,
+        "metaSortKey": -1579152291223,
+        "method": "GET",
+        "modified": 1580310757262,
+        "name": "Buscar Devs",
+        "parameters": [{
+            "description": "",
+            "id": "pair_8ed120e206c74607b7615b67e769884d",
+            "name": "latitude",
+            "value": "-23.2360211"
+        }, {
+            "description": "",
+            "id": "pair_b3799162e45f4e42a4b8fbbc5b51b938",
+            "name": "longitude",
+            "value": "-45.8754574"
+        }, {
+            "description": "",
+            "id": "pair_d333e32bb9df4e509b26529c6df4ad6e",
+            "name": "techs",
+            "value": "ReactJS, VueJS"
+        }],
+        "parentId": "fld_a703cc7969ff48fb82b97a197b38f28c",
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingFollowRedirects": "global",
+        "settingRebuildPath": true,
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "url": "{{ url  }}/search",
+        "_type": "request"
+    }, {
+        "_id": "env_7184b1f5ab36dda73c1e01613d1d77351e50b40b",
+        "color": null,
+        "created": 1569000078026,
+        "data": {},
+        "dataPropertyOrder": null,
+        "isPrivate": false,
+        "metaSortKey": 1569000078026,
+        "modified": 1569000078026,
+        "name": "Base Environment",
+        "parentId": "wrk_1335f050470942af81953968c46b4f3c",
+        "_type": "environment"
+    }, {
+        "_id": "jar_7184b1f5ab36dda73c1e01613d1d77351e50b40b",
+        "cookies": [],
+        "created": 1569000078029,
+        "modified": 1569000078029,
+        "name": "Default Jar",
+        "parentId": "wrk_1335f050470942af81953968c46b4f3c",
+        "_type": "cookie_jar"
+    }, {
+        "_id": "env_dbb562a259cb4211b893acb2e08ed75c",
+        "color": "#c32fb5",
+        "created": 1580310663278,
+        "data": {
+            "url": "http://localhost:3333"
+        },
+        "dataPropertyOrder": {
+            "&": ["url"]
+        },
+        "isPrivate": false,
+        "metaSortKey": 1580310663278,
+        "modified": 1580310728797,
+        "name": "DevRadar Development",
+        "parentId": "env_7184b1f5ab36dda73c1e01613d1d77351e50b40b",
+        "_type": "environment"
+    }]
+}
